@@ -22,5 +22,5 @@ day=tdate-bdate;
 lived=(age*365)+(month*30)+day;
 
 
-console.log("Age:"+age+" month"+month+" day"+day);
+console.log("Age:"+age+" month"+month+" day"+day);//all the values is number
 console.log("days lived:"+lived);
