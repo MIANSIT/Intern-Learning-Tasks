@@ -11,4 +11,4 @@ console.log("uppercase: "+upcase);
 console.log("lowercase: "+lowcase);
 console.log("first letter:"+text[0]);
 console.log("last letter:"+text[last-1]);//array is always (-1) to lenght
-//console.log(""+t[]);
+
