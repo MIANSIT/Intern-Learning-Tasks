@@ -4,8 +4,8 @@ let t;
 t=text;
 len=[text];
 last=text.length;//to calcutae the lastword
-let upcase=t.toLowerCase();
-let lowcase=t.toUpperCase();
+let lowcase=t.toLowerCase();
+let upcase=t.toUpperCase();
 console.log("inputed text:"+t);
 console.log("uppercase: "+upcase);
 console.log("lowercase: "+lowcase);
