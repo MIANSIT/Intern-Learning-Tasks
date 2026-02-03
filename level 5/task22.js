@@ -1,10 +1,10 @@
 let username=prompt("enter username:");
-let pass=prompt("password:");
+let password=prompt("password:");
 
-async function login(){
+async function login(username,password){
   const log=new Promise((resolve,reject)=>{
     setTimeout(function(){
-        if(username==="admin" && pass==="pass123")
+        if(username==="admin" && password==="pass123")
     {
         resolve("correct login"); 
     }
@@ -18,5 +18,5 @@ async function login(){
   return [l];
 }
 
-login() .then((result)=>{alert(result);})
+login(username,password) .then((result)=>{alert(result);})
 .catch((error)=>{alert(error);})
