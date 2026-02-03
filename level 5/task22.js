@@ -13,10 +13,11 @@ async function login(username,password){
     }
 },2000);
   });
-let i;
+
+  let i;
   try{
-     i=await log;
-    alert(i)
+     i= log;
+    alert(i);
   }
   catch(error)
   {
@@ -26,4 +27,4 @@ let i;
   return [i];
 }
 
-login(username,password);
+login(username,password) 
