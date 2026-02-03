@@ -9,4 +9,4 @@ for(let i=1;i<=number;i++)
      avg=((i*(i+1))/2)/i; // normal average
 }
  console.log("total="+sum);
-  console.log("total="+avg);
+ console.log("total="+avg);

@@ -11,6 +11,6 @@ console.log("Promises created");
 
 prom.then(function(value)
 {
-  console.log(value);
+  console.log(value);//2 sec por value show korbe
 });
 
