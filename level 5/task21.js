@@ -1,14 +1,23 @@
 async function rifat(){
    const prom= new Promise((resolve,reject)=>{
 
-      setTimeout(function(){resolve(" reloved");},2000);
+      setTimeout(function(){resolve("resloved");},2000);
    });
   
-   let p1=await prom;
+
+   let p1;
+   try{
+   p1=await prom;
+   alert(p1);
+   }
+
+   catch(error)
+   {
+    alert(error);
+   }
    return [p1];
 }
 
 console.log(rifat());
 
-rifat().then((result)=>{console.log(result);})
-.catch((error)=>{console.log(error);})
+rifat();

@@ -13,10 +13,17 @@ async function login(username,password){
     }
 },2000);
   });
-
-  let l=await log;
-  return [l];
+let i;
+  try{
+     i=await log;
+    alert(i)
+  }
+  catch(error)
+  {
+    alert(error);
+  }
+  
+  return [i];
 }
 
-login(username,password) .then((result)=>{alert(result);})
-.catch((error)=>{alert(error);})
+login(username,password);
