@@ -16,7 +16,7 @@ async function login(username,password){
 
   let i;
   try{
-     i= log;
+     i=await log;
     alert(i);
   }
   catch(error)

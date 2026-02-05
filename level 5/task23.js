@@ -1,17 +1,20 @@
 let city="Dhaka";
-let temp="25C";
 let condition="Sunny";
-//was not sure to how to make a  api
 async function getWeather(city){
 
     const ct=new Promise((resolve,reject)=>{
-        setTimeout(function(){
-            resolve("weather in: "+city+":"+temp+","+condition);
-        },3000);
+        fetch(`https://api.open-meteo.com/v1/forecast?latitude=23.71&longitude=90.40&current_weather=true`)
+        .then(response=>response.json())
+        .then(data=>{
+            const realt=data.current_weather.temperature;
+           resolve(`weather in ${city}:${realt}C ${condition}`);
+        })
+
+        .catch(reject);
     });
 
     let i;
-    console.log("Fetching weather for "+city);
+    console.log("Fetching weather...");
     try{
         i=await ct;
         console.log(i);
